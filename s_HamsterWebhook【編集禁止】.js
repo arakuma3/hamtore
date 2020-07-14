@@ -13,6 +13,8 @@ function doPost(e){
   var leverage;
   var memo;
   
+  insertLog_('Webhoo_doPost','Info',message,'memo1');
+
   m = remessage.exec(message);
   if (m) { // default strategy alert message
     strategy = m[2];
